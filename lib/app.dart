@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:qalb_e_dua/features/home/views/home.dart';
 import 'package:qalb_e_dua/utils/constants/text_strings.dart';
 import 'package:qalb_e_dua/utils/theme/theme.dart';
 
@@ -10,16 +11,20 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: TTexts.appName,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊', textAlign: TextAlign.center,),
-        ),
-      ),
+      home: const HomeScreen(),
+      //  const Scaffold(
+      //   body: Center(
+      //     child: Text(
+      //       'Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊',
+      //       textAlign: TextAlign.center,
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

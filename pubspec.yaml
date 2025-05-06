@@ -54,6 +54,7 @@ flutter:
   #--------------- LOCAL ASSETS ------------------#
   assets:
     - assets/logos/
+    - assets/animations/
     - assets/icons/brands/
     - assets/images/content/
     - assets/images/banners/
@@ -66,6 +67,10 @@ flutter:
 
   #--------------- LOCAL FONTS ------------------#
   fonts:
+    - family: FleurDeLeah
+      fonts:
+        - asset: assets/fonts/FleurDeLeah-Regular.ttf
+          weight: 400
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Light.ttf

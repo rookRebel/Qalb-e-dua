@@ -1,4 +1,3 @@
-// TODO Implement this library.
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -46,10 +45,7 @@ class TLoaders {
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(20),
-      icon: const Icon(
-        Symbols.warning,
-        color: TColors.white,
-      ),
+      icon: const Icon(Symbols.warning, color: TColors.white),
     );
   }
 }
